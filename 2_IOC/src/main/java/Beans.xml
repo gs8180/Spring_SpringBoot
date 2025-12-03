@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean id="deisel" class="com.ganesh.Beans.Deisel"></bean>
+        <bean id="petrol" class="com.ganesh.Beans.Petrol"></bean>
+        <bean id="electric" class="com.ganesh.Beans.Electric"></bean>
+        <bean id="car" class="com.ganesh.Beans.Car">
+        	<!--<property name="e" ref="petrol"></property>-->
+        	<!--<property name="e" ref="deisel"></property>-->
+        	<constructor-arg name="e" ref="petrol"></constructor-arg>
+        	
+        </bean>
+        
+
+
+
+
+</beans>

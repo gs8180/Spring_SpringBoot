@@ -1,0 +1,19 @@
+package com.ganesh;
+
+class Student{
+	
+	Student()
+	{
+		System.out.println("from student Class");
+	}
+}
+public class Test {
+
+	public static void main(String[] args) {
+		
+		new Student();
+		
+
+	}
+
+}

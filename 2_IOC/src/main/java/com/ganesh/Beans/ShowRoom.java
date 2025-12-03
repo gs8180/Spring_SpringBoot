@@ -1,0 +1,14 @@
+package com.ganesh.Beans;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class ShowRoom 
+{
+	public static void main(String[] args) {
+		ApplicationContext ctxt=new ClassPathXmlApplicationContext("Beans.xml");
+		Car cr=ctxt.getBean(Car.class);
+		cr.drive();
+	}
+
+}

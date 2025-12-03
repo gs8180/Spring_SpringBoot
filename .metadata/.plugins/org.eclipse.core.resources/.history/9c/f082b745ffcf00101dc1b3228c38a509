@@ -1,0 +1,29 @@
+package com.ganesh;
+
+public class Test{
+	static name;
+	
+	Test()
+	{
+		System.out.println("from student Class");
+		
+	}
+
+	public static void main(String[] args) {
+		
+		Student st=new Student();
+		System.out.println(st);
+		Student st2=new Student();
+		System.out.println(st2);
+		
+		if(st==st2)
+		{
+			System.out.println("are equal");
+		}
+		else
+			System.out.println("not equal");
+		
+
+	}
+
+}

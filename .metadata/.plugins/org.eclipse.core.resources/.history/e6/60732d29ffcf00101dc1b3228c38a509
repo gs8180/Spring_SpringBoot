@@ -1,0 +1,38 @@
+package com.ganesh;
+
+
+
+public class Student{
+	static name;
+	
+	private Student()
+	{
+		System.out.println("from student Class");
+		
+	}
+	static {
+		s=new Student();
+	}
+	 static name getObject()
+	{
+		return s;
+	}
+
+	public static void main(String[] args) {
+		
+		Student st=new Student();
+		System.out.println(st);
+		Student st2=new Student();
+		System.out.println(st2);
+		
+		if(st==st2)
+		{
+			System.out.println("are equal");
+		}
+		else
+			System.out.println("not equal");
+		
+
+	}
+
+}
